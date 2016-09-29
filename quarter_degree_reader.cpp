@@ -9,6 +9,7 @@ int main ()
   int lat_end;
   int lon_start;
   int lon_end;
+  char key; 
   //int count = 1;
   fstream infile;
   infile.open ("wet_data_c");
@@ -23,6 +24,13 @@ int main ()
 
    while(1)
    {
+
+          cout << "Enter your choices" << endl;
+          cout << "q:quit" << endl;
+          cin >> key;
+
+          if(key == 'q') break;
+
           cout << endl;
           cout << "enter lat_start and lat_end" << endl;
           cin >> lat_start;
